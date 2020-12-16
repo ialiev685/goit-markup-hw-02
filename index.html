@@ -4,26 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!--шапка-->
-    <header>
+    <header class="header">
       <!--меню-->
       <nav>
-        <a href="/">WebStudio</a>
-        <ul>
-          <li>Студия</li>
-          <li>Портфолио</li>
-          <li>Контакты</li>
+        <a href="/" class="logo-header">Web<span>Studio</span></a>
+        <ul class="site-nav">
+          <li><a class="link" href="/">Студия</a></li>
+          <li><a class="link" href="/">Портфолио</a></li>
+          <li><a class="link" href="/">Контакты</a></li>
         </ul>
       </nav>
       <!--/меню-->
       <!--адрес-->
       <address>
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+38 0961111111">+38 096 111 11 11</a></li>
+        <ul class="address-nav">
+          <li>
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link" href="tel:+38 0961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </address>
       <!--/адрес-->
@@ -32,36 +38,36 @@
     <!--контент сайта-->
     <main>
       <!--секция с ссылкой на зказа улуги-->
-      <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
+      <section class="section-order">
+        <h1 class="caption">Эффективные решения для вашего бизнеса</h1>
         <a href="#">Заказать услугу</a>
       </section>
       <!--секция с нашими качествами-->
       <section>
         <ul>
           <li>
-            <h3>Внимание к деталям</h3>
+            <h3 class="caption">Внимание к деталям</h3>
             <p>
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
-            <h3>Пунктуальность</h3>
+            <h3 class="caption">Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
-            <h3>Планирование</h3>
+            <h3 class="caption">Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
-            <h3>Современные технологии</h3>
+            <h3 class="caption">Современные технологии</h3>
             <p>
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
@@ -72,7 +78,7 @@
       <!--/секция с нашими качествами-->
       <!--секция с характером нашей работы-->
       <section>
-        <h2>Чем мы занимаемся</h2>
+        <h2 class="caption">Чем мы занимаемся</h2>
         <ul>
           <li>
             <img
@@ -94,26 +100,26 @@
       <!--/секция с характером нашей работы-->
       <!--секция наша команда-->
       <section>
-        <h2>Наша команда</h2>
+        <h2 class="caption">Наша команда</h2>
         <ul>
           <li>
             <img src="./img/person_1.jpg" alt="1-й человек" width="270" />
-            <h3>Игорь Демьяненко</h3>
+            <h3 class="caption">Игорь Демьяненко</h3>
             <p>Product Designer</p>
           </li>
           <li>
             <img src="./img/person_2.jpg" alt="2-й человек" width="270" />
-            <h3>Ольга Репина</h3>
+            <h3 class="caption">Ольга Репина</h3>
             <p>Frontend Developer</p>
           </li>
           <li>
             <img src="./img/person_3.jpg" alt="3-й человек" width="270" />
-            <h3>Николай Тарасов</h3>
+            <h3 class="caption">Николай Тарасов</h3>
             <p>Marketing</p>
           </li>
           <li>
             <img src="./img/person_4.jpg" alt="4-й человек" width="270" />
-            <h3>Михаил Ермаков</h3>
+            <h3 class="caption">Михаил Ермаков</h3>
             <p>UI Designer</p>
           </li>
         </ul>
@@ -122,7 +128,7 @@
     </main>
     <!--Подвал-->
     <footer>
-      <a href="/">WebStudio</a>
+      <a class="logo-footer" href="/">Web<span>Studio</span></a>
       <address>
         <p>
           г. Киев, пр-т Леси Украинки, 26<br />
