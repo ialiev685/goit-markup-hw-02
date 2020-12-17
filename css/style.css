@@ -1,7 +1,7 @@
 :root {
   --first-color-text: #212121;
   --second-color-text: #757575;
-  --accent-color-text: #2196f3;
+  --accent-color: #2196f3;
   --white-color: #ffffff;
 }
 /*первый основной основной цвет текста #212121*/
@@ -9,41 +9,77 @@
 /*акцент цвета текста #2196F3*/
 /*цвет фона шапки #FFFFFF*/
 /*цвет фона секции заказа и подвала #2F303A*/
-/*цвет фона направления #E5E5E5*/
-/*цвет фона направления #F5F4FA*/
+/*цвет фона - наши качества и направления #E5E5E5*/
+/*цвет фона - наша команда #F5F4FA*/
+
+body {
+  letter-spacing: 0.03em;
+}
+
+/*Заголовки*/
+.caption {
+  color: var(--first-color-text);
+}
+
+/*текст/абзац*/
+.text {
+  color: var(--second-color-text);
+}
+
+/*сылки*/
+a {
+  text-decoration: none;
+}
+
+/*списки*/
+ul {
+  list-style: none;
+}
 
 /*шапка сайта*/
 .logo-header {
-  color: var(--accent-color-text);
+  color: var(--accent-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 .logo-header span {
-  color: var(--first-color-tex);
+  color: var(--first-color-text);
 }
 
 .site-nav .link {
   color: var(--first-color-text);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .address-nav .link {
   color: var(--second-color-text);
 
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus,
 .address-nav .link:hover,
 .address-nav .link:focus {
-  color: var(--accent-color-text);
+  color: var(--accent-color);
 }
 
 .header {
   background-color: var(--white-color);
-}
-
-/*caption*/
-.caption{
-    color: var(--first-color-text);
 }
 
 /*section-order*/
@@ -51,8 +87,55 @@
   background-color: #2f303a;
 }
 
-.section-order .caption{
-    color: var(--white-color);
+.section-order .caption {
+  color: var(--white-color);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.
+.section-order .link {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/*наши качества*/
+.qualities {
+  background-color: #e5e5e5;
+}
+
+/*Направление*/
+.orientation {
+  background-color: #e5e5e5;
+}
+
+/*Наша команда*/
+.team {
+  background-color: #f5f4fa;
+}
+
+/*подвал сайта*/
+.footer {
+  background-color: #2f303a;
+}
+
+.footer .logo-footer {
+  color: var(--accent-color);
+}
+
+.logo-footer span {
+  color: var(--white-color);
+}
+
+.footer .text-address {
+  color: var(--white-color);
+}
+
+.footer .link {
+  color: rgba(255, 255, 255, 0.6);
+}
