@@ -215,3 +215,18 @@ body {
   font-size: 16px;
   line-height: 1.87;
 }
+
+.buttons .btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: var(--white-color);
+}
+
+.buttons .btn:hover,
+.buttons .btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
