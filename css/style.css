@@ -1,8 +1,26 @@
 :root {
-  --first-color-text: #212121;
-  --second-color-text: #757575;
-  --accent-color: #2196f3;
-  --white-color: #ffffff;
+  --color-black: #212121;
+  --color-lightgray: #757575;
+  --color-blue: #2196f3;
+  --color-white: #ffffff;
+  --color-darkgray: #2f303a;
+  --color-darkwhite: #f5f4fa;
+  --color-transparent: rgba(255, 255, 255, 0.6);
+  --name-font-family-Roboto: Roboto, sans-serif;
+  --name-font-family-Raleway: Raleway, sans-serif;
+
+  --color-text-primary: var(--color-black);
+  --color-text-second: var(--color-lightgray);
+  --color-text-accent: var(--color-blue);
+  --color-text-white: var(--color-white);
+  --color-text-transparent: var(--color-transparent);
+  --color-text-transparent: var(--color-transparent);
+  --color-background-white: var(--color-white);
+  --color-background-accent: var(--color-blue);
+  --color-backgorund-gray: var(--color-darkgray);
+  --color-bakcground-darkwhite: var(--color-darkwhite);
+  --font-family-primary: var(--name-font-family-Roboto);
+  --font-family-second: var(--name-font-family-Raleway);
 }
 /*первый основной основной цвет текста #212121*/
 /*Второй цвет текста #757575*/
@@ -17,27 +35,36 @@
 body {
   letter-spacing: 0.03em;
   background-color: var(--white-color);
-  color: var(--first-color-text);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-primary);
 }
 
 /*текст/абзац*/
 .text {
-  color: var(--second-color-text);
+  color: var(--color-text-second);
 
-  font-family: Roboto, sans-serif;
   font-weight: 400;
-}
-
-/*заголовки*/
-.caption {
-  font-family: Roboto, sans-serif;
 }
 
 /*сылки*/
 .link,
-.logo-header,
-.logo-footer {
+.logo {
+  font-family: var(--font-family-primary);
   text-decoration: none;
+}
+
+/*логотип*/
+.logo {
+  color: var(--color-text-accent);
+
+  font-family: var(--font-family-second);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/*заголовки*/
+.caption {
 }
 
 /*списки*/
@@ -46,23 +73,13 @@ body {
 }
 
 /*шапка сайта*/
-.logo-header {
-  color: var(--accent-color);
-
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.logo-header span {
-  color: var(--first-color-text);
+.header .second-half.up {
+  color: var(--color-text-primary);
 }
 
 .site-nav .link {
-  color: var(--first-color-text);
+  color: var(--color-text-primary);
 
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -70,13 +87,13 @@ body {
 }
 
 .link.current {
-  color: var(--accent-color);
+  color: var(--color-text-accent);
 }
 
 .address-nav .link {
-  color: var(--second-color-text);
+  color: var(--color-text-second);
 
-  font-family: Roboto, sans-serif;
+  font-family: var(--font-family-primary);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -88,20 +105,20 @@ body {
 .site-nav .link:focus,
 .address-nav .link:hover,
 .address-nav .link:focus {
-  color: var(--accent-color);
+  color: var(--color-text-accent);
 }
 
 .header {
-  background-color: var(--white-color);
+  background-color: var(--color-background-white);
 }
 
 /*section-order*/
 .section-order {
-  background-color: #2f303a;
+  background-color: var(--color-backgorund-gray);
 }
 
 .section-order .caption {
-  color: var(--white-color);
+  color: var(--color-text-white);
 
   font-weight: 900;
   font-size: 44px;
@@ -112,8 +129,8 @@ body {
 }
 
 .section-order .link {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  color: var(--color-text-white);
+  background-color: var(--color-background-accent);
 }
 
 /*section-skil*/
@@ -139,7 +156,7 @@ body {
 
 /*Наша команда*/
 .section-team {
-  background-color: #f5f4fa;
+  background-color: var(--color-bakcground-darkwhite);
 }
 
 .section-team .caption {
@@ -164,26 +181,16 @@ body {
 
 /*подвал сайта*/
 .footer {
-  background-color: #2f303a;
+  background-color: var(--color-backgorund-gray);
 }
 
-.footer .logo-footer {
-  color: var(--accent-color);
-
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.logo-footer span {
-  color: var(--white-color);
+.footer .second-half.down {
+  color: var(--color-text-white);
 }
 .footer address {
 }
 
 .footer .contacts {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -191,18 +198,19 @@ body {
 }
 
 .footer .text-address {
-  color: var(--white-color);
+  color: var(--color-text-white);
 }
 
 .footer .link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text-transparent);
+  display: block;
 }
 
 /*============ Страница портфолио =============*/
 
 /*section-item*/
 .section-item h1 {
-  color: var(--white-color);
+  color: var(--color-text-white);
 }
 .section-item .caption {
   font-weight: 700;
@@ -217,16 +225,16 @@ body {
 }
 
 .buttons .btn {
-  font-family: Roboto, sans-serif;
+  font-family: var(--font-family-primary);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  background-color: var(--white-color);
+  background-color: var(--color-background-white);
 }
 
 .buttons .btn:hover,
 .buttons .btn:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
+  background-color: var(--color-background-accent);
+  color: var(--color-text-white);
 }
