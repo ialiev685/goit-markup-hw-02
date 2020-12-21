@@ -12,7 +12,7 @@
   --color-text-primary: var(--color-black);
   --color-text-second: var(--color-lightgray);
   --color-text-accent: var(--color-blue);
-  --color-text-white: var(--color-white);
+  --color-text-inverse: var(--color-white);
   --color-text-transparent: var(--color-transparent);
   --color-text-transparent: var(--color-transparent);
   --color-background-white: var(--color-white);
@@ -22,13 +22,6 @@
   --font-family-primary: var(--name-font-family-Roboto);
   --font-family-second: var(--name-font-family-Raleway);
 }
-/*первый основной основной цвет текста #212121*/
-/*Второй цвет текста #757575*/
-/*акцент цвета текста #2196F3*/
-/*цвет фона шапки #FFFFFF*/
-/*цвет фона секции заказа и подвала #2F303A*/
-/*цвет фона - наши качества и направления #E5E5E5*/
-/*цвет фона - наша команда #F5F4FA*/
 
 /*============ Страница студиа =============*/
 
@@ -61,10 +54,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-}
-
-/*заголовки*/
-.caption {
 }
 
 /*списки*/
@@ -118,7 +107,7 @@ body {
 }
 
 .section-order .caption {
-  color: var(--color-text-white);
+  color: var(--color-text-inverse);
 
   font-weight: 900;
   font-size: 44px;
@@ -129,7 +118,7 @@ body {
 }
 
 .section-order .link {
-  color: var(--color-text-white);
+  color: var(--color-text-inverse);
   background-color: var(--color-background-accent);
 }
 
@@ -185,9 +174,7 @@ body {
 }
 
 .footer .second-half.down {
-  color: var(--color-text-white);
-}
-.footer address {
+  color: var(--color-text-inverse);
 }
 
 .footer .contacts {
@@ -198,7 +185,7 @@ body {
 }
 
 .footer .text-address {
-  color: var(--color-text-white);
+  color: var(--color-text-inverse);
 }
 
 .footer .link {
@@ -210,7 +197,7 @@ body {
 
 /*section-item*/
 .section-item h1 {
-  color: var(--color-text-white);
+  color: var(--color-text-inverse);
 }
 .section-item .caption {
   font-weight: 700;
@@ -236,5 +223,5 @@ body {
 .buttons .btn:hover,
 .buttons .btn:focus {
   background-color: var(--color-background-accent);
-  color: var(--color-text-white);
+  color: var(--color-text-inverse);
 }
