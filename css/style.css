@@ -1,0 +1,227 @@
+:root {
+  --color-black: #212121;
+  --color-lightgray: #757575;
+  --color-blue: #2196f3;
+  --color-white: #ffffff;
+  --color-darkgray: #2f303a;
+  --color-darkwhite: #f5f4fa;
+  --color-transparent: rgba(255, 255, 255, 0.6);
+  --name-font-family-Roboto: Roboto, sans-serif;
+  --name-font-family-Raleway: Raleway, sans-serif;
+
+  --color-text-primary: var(--color-black);
+  --color-text-second: var(--color-lightgray);
+  --color-text-accent: var(--color-blue);
+  --color-text-inverse: var(--color-white);
+  --color-text-transparent: var(--color-transparent);
+  --color-text-transparent: var(--color-transparent);
+  --color-background-white: var(--color-white);
+  --color-background-accent: var(--color-blue);
+  --color-backgorund-gray: var(--color-darkgray);
+  --color-bakcground-darkwhite: var(--color-darkwhite);
+  --font-family-primary: var(--name-font-family-Roboto);
+  --font-family-second: var(--name-font-family-Raleway);
+}
+
+/*============ Страница студиа =============*/
+
+body {
+  letter-spacing: 0.03em;
+  background-color: var(--white-color);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-primary);
+}
+
+/*текст/абзац*/
+.text {
+  color: var(--color-text-second);
+
+  font-weight: 400;
+}
+
+/*сылки*/
+.link,
+.logo {
+  font-family: var(--font-family-primary);
+  text-decoration: none;
+}
+
+/*логотип*/
+.logo {
+  color: var(--color-text-accent);
+
+  font-family: var(--font-family-second);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/*списки*/
+.without-dot {
+  list-style: none;
+}
+
+/*шапка сайта*/
+.header .second-half.up {
+  color: var(--color-text-primary);
+}
+
+.site-nav .link {
+  color: var(--color-text-primary);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.link.current {
+  color: var(--color-text-accent);
+}
+
+.address-nav .link {
+  color: var(--color-text-second);
+
+  font-family: var(--font-family-primary);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.address-nav .link:hover,
+.address-nav .link:focus {
+  color: var(--color-text-accent);
+}
+
+.header {
+  background-color: var(--color-background-white);
+}
+
+/*section-order*/
+.section-order {
+  background-color: var(--color-backgorund-gray);
+}
+
+.section-order .caption {
+  color: var(--color-text-inverse);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section-order .link {
+  color: var(--color-text-inverse);
+  background-color: var(--color-background-accent);
+}
+
+/*section-skil*/
+.section-skils .caption {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.section-skils .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/*section-direction*/
+.section-direction .caption {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/*Наша команда*/
+.section-team {
+  background-color: var(--color-bakcground-darkwhite);
+}
+
+.section-team .caption {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.section-team .caption.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.section-team .text {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+/*подвал сайта*/
+.footer {
+  background-color: var(--color-backgorund-gray);
+}
+
+.footer .second-half.down {
+  color: var(--color-text-inverse);
+}
+
+.footer .contacts {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer .text-address {
+  color: var(--color-text-inverse);
+}
+
+.footer .link {
+  color: var(--color-text-transparent);
+  display: block;
+}
+
+/*============ Страница портфолио =============*/
+
+/*section-item*/
+.section-item h1 {
+  color: var(--color-text-inverse);
+}
+.section-item .caption {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.section-item .text {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.buttons .btn {
+  font-family: var(--font-family-primary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: var(--color-background-white);
+}
+
+.buttons .btn:hover,
+.buttons .btn:focus {
+  background-color: var(--color-background-accent);
+  color: var(--color-text-inverse);
+}
